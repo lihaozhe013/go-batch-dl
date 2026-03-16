@@ -1,0 +1,24 @@
+{
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "go.useLanguageServer": true,
+  "gopls": {
+    "ui.semanticTokens": true,
+    "usePlaceholders": true,
+    "staticcheck": true,
+    "analyses": {
+      "unusedparams": true,
+      "shadow": true,
+      "nilness": true
+    }
+  },
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "package",
+  "go.lintFlags": ["--fast"],
+  "go.inlayHints.assignVariableTypes": true,
+  "go.testTimeout": "30s"
+}
